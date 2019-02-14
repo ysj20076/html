@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div>
+            <h2 id="home"><a href="index.html" title="home">
+                <img width="100" src="image/5.jpg">
+            </a></h2>
+        </div>
+        <div>
+            <h1>javascript</h1>
+            <div>
+                <div>
+                    <img id="pic" src="image/poker.jpg" height="200">
+                    <p id="demo">watch here!</p>
+                </div>
+                <div style="clear:both">
+                    <button onmouseover="f1()">button1</button>
+                    <button onmouseover="f2()">button2</button>
+                </div>
+                <script>
+                    demo=document.getElementById("demo")
+                    pic = document.getElementById("pic")
+                    function f1() {
+                        pic.src="image/smile.jpg"
+                        demo.innerHTML="SMILE"
+                        demo.style.fontSize="15px"
+                        demo.style.color="black"
+                        demo.style.backgroundColor="yellow"
+                    }
+                    function f2() {
+                        pic.src="image/love.jpg"
+                        demo.innerHTML="LOVE"
+                        demo.style.fontSize="15px"
+                        demo.style.color="white"
+                        demo.style.backgroundColor="black"
+                    }
+                </script>
+                <noscript>Sorry, your browser does not support JavaScript!</noscript>
+            </div>
+        </div>
+        
+    </body>
+</html>
